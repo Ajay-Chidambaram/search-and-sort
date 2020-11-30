@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Searching</title>
+      <link rel="stylesheet" href="./styles/search/styles.css">
+      <link rel="stylesheet" href="./styles/sort/styles.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="generate()" style="background: #031321;">
+      <header>
+            <h1>Sorting Visualizer</h1>
+      </header>
+
+      <div class="slidecontainer">
+            <p>Speed of Algorithm (Fast - Slow):</p>
+            <input type="range" min="1" max="101" value="0" step="10" class="slider" id="myRange">
+      </div>
+
+      <section id="section-1">
+            <div class="left-side">
+                  <button onclick="generate()">Generate Array</button>
+            </div>
+            <div class="right-side">
+                  <label for="input_num" style="font-weight: bold;">Search </label>
+                  <input id="input_num" type="number" min="1" max="100">
+                  <button onclick="lin_search()">Linear Search</button>
+                  <button onclick="bin_search()">Binary Search</button>
+            </div>
+      </section>
+
+      <section>
+            <div id="array-container" style="flex-direction: row;">
+
+            </div>
+            <div id="result">
+
+            </div>
+      </section>
+
+      <footer>
+            <a href="https://www.linkedin.com/in/chidambaram-k-1a9236189/" class="fa fa-linkedin"></a>
+            <a href="https://www.facebook.com/ajaysreenivasan.sreenivasan/" class="fa fa-facebook"></a>
+            <a href="https://github.com/Ajay-Chidambaram" class="fa fa-github"></a>
+            <div class="bottom-side">
+                  <p>Designed by AJ</p>
+            </div>
+      </footer>
+
+      <script src="./scripts/main.js"></script>
+      <script src="./scripts/search.js"></script>
+      <script src="./scripts/merge_for_search.js"></script>
+
+</body>
+
+</html>
